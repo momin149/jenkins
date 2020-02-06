@@ -60,8 +60,15 @@ module.exports = function (config) {
       { pattern: './src/test.ts', watched: false }
     ],
     // preprocessors: {
-    //   './src/test.ts': ['@angular/cli']
+      // './src/test.ts': ['@angular/cli']
     // },
+    // files: [
+    //   'code/**/*.ts'
+    // ],
+
+    preprocessors: {
+      // '**/*.ts': ['karma-typescript', 'coverage'],
+    },
     mime: {
       'text/x-typescript': ['ts', 'tsx']
     },
